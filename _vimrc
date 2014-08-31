@@ -1,11 +1,11 @@
 " nz45s2
 
+syntax on
+filetype plugin on
+
 " Pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-
-syntax on
-filetype plugin on
 
 set nocompatible
 set showmatch           " Show matching brackets.
@@ -16,12 +16,15 @@ set hlsearch            " Highlight search
 set ignorecase
 set smarttab            " Smart tab
 set fileformat=dos
-set nowrap
+set wrap
 set relativenumber
 set number              " Show line number
 set laststatus=0        " Always show statusline
 set wildmenu
 set smartcase
+
+nnoremap j gj
+nnoremap k gk
 
 " Opening
 au GUIEnter * simalt ~x
@@ -41,9 +44,6 @@ set background=dark
 colorscheme molokai
 " set guifont=Inconsolata:h14:cANSI
 set guifont=DejaVu\ Sans\ Mono:h11
-
-" Backup
-set nobackup
 
 " Delphi C SWREF
 set expandtab
@@ -109,6 +109,9 @@ nnoremap <F12> :A<CR>
 " Ag
 nnoremap <leader>a :Ack!<space>
 let g:ackprg = 'ag --smart-case --nogroup --nocolor --column'
+" Map <Leader>- and <Leader>= to :colder and :cnewer
+nnoremap <Leader>- :colder<CR>
+nnoremap <Leader>= :cnewer<CR>
 
 " Ack
 " let g:ackprg='perl "c:\Path\ack.pl" -H --nocolor --nogroup --column'
@@ -135,6 +138,9 @@ nnoremap <F7> :cs kill -1<CR>
 
 " Ctag
 nnoremap <C-]> :tjump <C-R>=expand("<cword>")<CR><CR>
+
+" Fuzzyfinder
+nnoremap <leader>u :FufTag<CR>
 
 " Gitgutter
 let g:gitgutter_realtime = 0
@@ -179,6 +185,13 @@ let g:LookupFile_LookupFunc = 'LookupFile_IgnoreCaseFunc'
 " UltiSnips
 let g:UltiSnipsJumpForwardTrigger  = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+" Yankring
+let yankring_replace_n_pkey = '<C-k>'
+let yankring_replace_n_nkey = '<C-j>' 
+nnoremap <F11> :YRShow<CR>
+" If g:yankring_max_element_length is set to 0, there is no limit.
+let g:yankring_max_element_length = 0
 
 
 " CtrlP
@@ -227,7 +240,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 inoremap <expr> <C-d> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<C-d>"
 inoremap <expr> <C-u> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
 inoremap <expr> <C-f> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<C-f>"
-inoremap <expr> <C-b> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-b>"
+inoremap <expr> <C-b> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-b>=0"
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
@@ -253,6 +266,12 @@ set statusline+=\ %P
 "     set fdm=diff
 " endfunction
 
+set winminheight=0
+set winminwidth=0
+set splitright
+set splitbelow
+nnoremap <Leader>z <C-w>\|<C-w>_
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   Plugin                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -270,3 +289,13 @@ function RemoveTrailingWhitespace()
 endfunction
 " autocmd BufWritePre * call RemoveTrailingWhitespace()
 nnoremap <F2> :call RemoveTrailingWhitespace()<CR>
+
+" dbs-terminal
+nnoremap <F3> :call DBSOpenGitBash()<CR>
+
+" set foldmethod to indent if editing a python file
+autocmd FileType python set foldmethod=indent
+" set indents to 4 if editing a python file
+autocmd FileType python set tabstop=4
+autocmd FileType python set softtabstop=4
+autocmd FileType python set shiftwidth=4

@@ -7,3 +7,6 @@
 [submodule "bufexplorer.zip"]
 	path = bufexplorer.zip
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "ctrlp.vim"]
+	path = ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git

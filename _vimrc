@@ -100,6 +100,9 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 set cursorline
 hi cursorline guibg=NONE gui=underline
 
+" Map <Leader>- and <Leader>= to :colder and :cnewer
+nnoremap <Leader>- :colder<CR>
+nnoremap <Leader>= :cnewer<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   Plugin                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

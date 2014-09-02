@@ -116,6 +116,10 @@ nnoremap <Leader>= :cnewer<CR>
 " Ack
 " let g:ackprg='perl "c:\Path\ack.pl" -H --nocolor --nogroup --column'
 
+nnoremap <leader>a :Ack!<space>
+let g:ackprg = 'ag --smart-case --nogroup --nocolor --column'
+let g:ack_use_dispatch = 1
+
 " Neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_max_menu_width = 70

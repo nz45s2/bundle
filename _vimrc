@@ -236,7 +236,8 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\.exe$\|\.so$\|\.dll$\|\.elf$\|\.o$\
                \|\.obj$\
                \|\.vsd$\|\.vsdx$\|\.doc$\|\.docx$\
-               \|\.xls$\|\.xlsx$',
+               \|\.xls$\|\.xlsx$\
+               \|\.out$\|\.files$\|tags$\|\.d$\|\.err$',
     \ 'link': '',
     \ }
 

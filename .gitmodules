@@ -19,3 +19,15 @@
 [submodule "FuzzyFinder"]
 	path = FuzzyFinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "vim-dispatch"]
+	path = vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
+[submodule "vim-easymotion"]
+	path = vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "VisIncr"]
+	path = VisIncr
+	url = https://github.com/vim-scripts/VisIncr.git
+[submodule "vim-lucius"]
+	path = vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius.git

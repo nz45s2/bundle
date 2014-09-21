@@ -31,3 +31,9 @@
 [submodule "vim-lucius"]
 	path = vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius.git
+[submodule "genutils"]
+	path = genutils
+	url = https://github.com/vim-scripts/genutils.git
+[submodule "lookupfile"]
+	path = lookupfile
+	url = https://github.com/vim-scripts/lookupfile.git

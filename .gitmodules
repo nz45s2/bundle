@@ -73,3 +73,15 @@
 [submodule "nerdtree"]
 	path = nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim-mark"]
+	path = vim-mark
+	url = https://github.com/dimasg/vim-mark.git
+[submodule "tagbar"]
+	path = tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "TagHighlight"]
+	path = TagHighlight
+	url = https://github.com/vim-scripts/TagHighlight.git
+[submodule "ultisnips"]
+	path = ultisnips
+	url = https://github.com/SirVer/ultisnips.git

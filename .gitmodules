@@ -58,3 +58,18 @@
 [submodule "YankRing.vim"]
 	path = YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "fencview"]
+	path = fencview
+	url = https://github.com/mbbill/fencview.git
+[submodule "vim-multiple-cursors"]
+	path = vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "neocomplcache.vim"]
+	path = neocomplcache.vim
+	url = https://github.com/Shougo/neocomplcache.vim.git
+[submodule "nerdcommenter"]
+	path = nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "nerdtree"]
+	path = nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

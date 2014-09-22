@@ -4,7 +4,7 @@ syntax on
 filetype plugin on
 
 " Pathogen
-runtime bundle/pathogen/autoload/pathogen.vim
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 set nocompatible

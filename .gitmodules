@@ -37,3 +37,18 @@
 [submodule "lookupfile"]
 	path = lookupfile
 	url = https://github.com/vim-scripts/lookupfile.git
+[submodule "vim-unimpaired"]
+	path = vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "vim-colors-solarized"]
+	path = vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "tabular"]
+	path = tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim-pathogen"]
+	path = vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "molokai"]
+	path = molokai
+	url = https://github.com/tomasr/molokai.git

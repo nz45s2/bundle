@@ -88,3 +88,6 @@
 [submodule "vim-cscope-maps"]
 	path = vim-cscope-maps
 	url = https://github.com/nz45s2/vim-cscope-maps.git
+[submodule "vim-mswin"]
+	path = vim-mswin
+	url = https://github.com/nz45s2/vim-mswin.git

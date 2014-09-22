@@ -103,6 +103,13 @@ hi cursorline guibg=NONE gui=underline
 " Map <Leader>- and <Leader>= to :colder and :cnewer
 nnoremap <Leader>- :colder<CR>
 nnoremap <Leader>= :cnewer<CR>
+
+" Window split
+set winminheight=0
+set winminwidth=0
+set splitright
+set splitbelow
+nnoremap <Leader>z <C-w>\|<C-w>_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   Plugin                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -274,11 +281,8 @@ set statusline+=\ %P
 "     set fdm=diff
 " endfunction
 
-set winminheight=0
-set winminwidth=0
-set splitright
-set splitbelow
-nnoremap <Leader>z <C-w>\|<C-w>_
+" Gundo
+nnoremap <F3> :GundoToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   Plugin                                   "
@@ -297,9 +301,6 @@ function RemoveTrailingWhitespace()
 endfunction
 " autocmd BufWritePre * call RemoveTrailingWhitespace()
 nnoremap <F2> :call RemoveTrailingWhitespace()<CR>
-
-" dbs-terminal
-nnoremap <F3> :call DBSOpenGitBash()<CR>
 
 " set foldmethod to indent if editing a python file
 autocmd FileType python set foldmethod=indent

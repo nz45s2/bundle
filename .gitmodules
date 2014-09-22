@@ -91,3 +91,6 @@
 [submodule "vim-mswin"]
 	path = vim-mswin
 	url = https://github.com/nz45s2/vim-mswin.git
+[submodule "gundo.vim"]
+	path = gundo.vim
+	url = https://github.com/sjl/gundo.vim.git

@@ -94,3 +94,6 @@
 [submodule "gundo.vim"]
 	path = gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
+[submodule "vim.ctags"]
+	path = vim.ctags
+	url = https://github.com/nz45s2/vim.ctags.git

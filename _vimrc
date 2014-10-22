@@ -54,6 +54,12 @@ set shiftwidth=3
 set colorcolumn=80
 set backspace=2
 
+" Python
+" autocmd FileType python set foldmethod=indent    " set foldmethod to indent if editing a python file
+autocmd FileType python set tabstop=4              " set indents to 4 if editing a python file
+autocmd FileType python set softtabstop=4          " set indents to 4 if editing a python file
+autocmd FileType python set shiftwidth=4           " set indents to 4 if editing a python file
+
 " Toggle Menu and Toolbar
 set guioptions-=m
 set guioptions-=T
@@ -209,7 +215,6 @@ let g:yankring_max_element_length = 0
 
 
 " CtrlP
-
 " Set this to 1 to set searching by filename (as opposed to full path) as the
 " default: >
 let g:ctrlp_by_filename = 1
@@ -241,10 +246,10 @@ let g:ctrlp_max_height = 70
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.hg$\|\.svn$',
     \ 'file': '\.exe$\|\.so$\|\.dll$\|\.elf$\|\.o$\
-               \|\.obj$\
+               \|\.lst$\|\.obj$\
                \|\.vsd$\|\.vsdx$\|\.doc$\|\.docx$\
                \|\.xls$\|\.xlsx$\
-               \|\.out$\|\.files$\|tags$\|\.d$\|\.err$',
+               \|\.out$\|\.file$\|tags$\|filenametag$\|project.bat$\|\.d$\|\.err$',
     \ 'link': '',
     \ }
 
@@ -302,9 +307,3 @@ endfunction
 " autocmd BufWritePre * call RemoveTrailingWhitespace()
 nnoremap <F2> :call RemoveTrailingWhitespace()<CR>
 
-" set foldmethod to indent if editing a python file
-autocmd FileType python set foldmethod=indent
-" set indents to 4 if editing a python file
-autocmd FileType python set tabstop=4
-autocmd FileType python set softtabstop=4
-autocmd FileType python set shiftwidth=4

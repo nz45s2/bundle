@@ -97,3 +97,6 @@
 [submodule "vim.ctags"]
 	path = vim.ctags
 	url = https://github.com/nz45s2/vim.ctags.git
+[submodule "vim-airline"]
+	path = vim-airline
+	url = https://github.com/bling/vim-airline.git

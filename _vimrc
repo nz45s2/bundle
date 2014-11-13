@@ -40,10 +40,13 @@ set nobackup
 set noswapfile
 
 " Colorscheme
-set background=dark
-colorscheme molokai
+" colorscheme jellybeans
 " set guifont=Inconsolata:h14:cANSI
-set guifont=DejaVu\ Sans\ Mono:h11
+" colorscheme molokai
+" set guifont=DejaVu\ Sans\ Mono:h11
+colorscheme molokai
+set background=dark
+set guifont=Monaco:h11
 
 " Delphi C SWREF
 set expandtab

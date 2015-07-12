@@ -43,10 +43,10 @@ set noswapfile
 " colorscheme jellybeans
 " set guifont=Inconsolata:h14:cANSI
 " colorscheme molokai
-" set guifont=DejaVu\ Sans\ Mono:h11
 colorscheme molokai
 set background=dark
-set guifont=Monaco:h11
+set guifont=DejaVu\ Sans\ Mono:h11
+"set guifont=Monaco:h15
 
 " Delphi C SWREF
 set expandtab
@@ -317,4 +317,3 @@ function RemoveTrailingWhitespace()
 endfunction
 " autocmd BufWritePre * call RemoveTrailingWhitespace()
 nnoremap <F2> :call RemoveTrailingWhitespace()<CR>
-

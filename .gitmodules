@@ -103,3 +103,6 @@
 [submodule "jellybeans.vim"]
 	path = jellybeans.vim
 	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "snipMate"]
+	path = snipMate
+	url = https://github.com/vim-scripts/snipMate.git

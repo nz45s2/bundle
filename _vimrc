@@ -211,7 +211,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " Yankring
 let yankring_replace_n_pkey = '<C-k>'
-let yankring_replace_n_nkey = '<C-j>' 
+let yankring_replace_n_nkey = '<C-j>'
 nnoremap <F11> :YRShow<CR>
 " If g:yankring_max_element_length is set to 0, there is no limit.
 let g:yankring_max_element_length = 0

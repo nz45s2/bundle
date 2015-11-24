@@ -145,9 +145,9 @@ let g:neocomplcache_max_menu_width = 70
 nnoremap <C-\> :NeoComplCacheToggle<CR>
 
 " Tagbar
-set tags=tags;
-let g:tagbar_left=1
-nnoremap <F4> :TagbarToggle<CR>
+" set tags=tags;
+" let g:tagbar_left=1
+" nnoremap <F4> :TagbarToggle<CR>
 
 " Nerdtree
 let NERDTreeWinPos="right"

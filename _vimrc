@@ -119,6 +119,15 @@ set winminwidth=0
 set splitright
 set splitbelow
 nnoremap <Leader>z <C-w>\|<C-w>_
+
+" Quicksave sessions
+" Quick write session with F2
+nnoremap <F8> :mksession! ~/.vim_session <CR>
+" And load session with F3
+nnoremap <F9> :source ~/.vim_session <CR>
+" http://stackoverflow.com/questions/9281438/syntax-highlighting-doesnt-work-after-restore-a-previous-vim-session
+set sessionoptions-=options
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   Plugin                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -247,11 +256,12 @@ let g:ctrlp_max_height = 70
 " In addition to |'wildignore'|, use this for files and directories you want only
 " CtrlP to not show. Use regexp to specify the patterns: >
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+    \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\v[\/](Products)|\v[\/](example_config)',
     \ 'file': '\.exe$\|\.so$\|\.dll$\|\.elf$\|\.o$\
                \|\.lst$\|\.obj$\
                \|\.vsd$\|\.vsdx$\|\.doc$\|\.docx$\
                \|\.xls$\|\.xlsx$\
+               \|\.log$\
                \|\.out$\|\.file$\|tags$\|filenametag$\|project.bat$\|\.d$\|\.err$',
     \ 'link': '',
     \ }

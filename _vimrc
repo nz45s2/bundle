@@ -1,13 +1,64 @@
 " nz45s2
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+if has("win32")
+    let path='$VIM/vimfiles/plugged'
+    call plug#begin(path)
+else
+    call plug#begin()
+endif
+
+" Plug
+Plug 'vim-scripts/FuzzyFinder'
+Plug 'vim-scripts/L9'
+Plug 'vim-scripts/TagHighlight'
+Plug 'vim-scripts/VisIncr'
+Plug 'vim-scripts/YankRing.vim'
+Plug 'vim-scripts/a.vim'
+Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/bufexplorer.zip'
+Plug 'kien/ctrlp.vim'
+Plug 'mbbill/fencview'
+Plug 'vim-scripts/genutils'
+Plug 'sjl/gundo.vim'
+Plug 'vim-scripts/lookupfile'
+Plug 'Shougo/neocomplcache.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-scripts/snipMate'
+Plug 'godlygeek/tabular'
+Plug 'nz45s2/vim-cscope-maps'
+Plug 'nz45s2/vim-mswin'
+Plug 'nz45s2/vim.ctags'
+Plug 'tpope/vim-dispatch'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'dimasg/vim-mark'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-unimpaired'
+
+" colorschemes
+Plug 'nanotech/jellybeans.vim'
+Plug 'tomasr/molokai'
+Plug 'altercation/vim-colors-solarized'
+Plug 'jonathanfilip/vim-lucius'
+
+" nerdtree will only be loaded if :NERDTreeToggle is executed
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" ultinips depends on vim-snippets
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" vim-airline depends on vim-airline-themes
+Plug 'bling/vim-airline' | Plug 'vim-airline/vim-airline-themes'
+
+
+call plug#end()
+filetype plugin indent on
 
 syntax on
-filetype plugin on
 
-" Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
-set nocompatible
 set showmatch           " Show matching brackets.
 set incsearch           " Incremental search
 set mouse=a             " Enable mouse usage (all modes)
